@@ -2,95 +2,127 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* LUXE Premium Design System */
 
 @layer base {
   :root {
+    /* Core backgrounds */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 0 0% 8%;
+    
+    /* Card surfaces */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 0 0% 8%;
+    
+    /* Popover/dropdown */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
+    --popover-foreground: 0 0% 8%;
+    
+    /* Primary - Champagne Gold */
+    --primary: 38 35% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary - Soft Cream */
+    --secondary: 40 20% 96%;
+    --secondary-foreground: 0 0% 15%;
+    
+    /* Muted - Elegant Gray */
+    --muted: 40 10% 94%;
+    --muted-foreground: 0 0% 45%;
+    
+    /* Accent - Rose Gold */
+    --accent: 15 30% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Destructive */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* UI Elements */
+    --border: 40 10% 90%;
+    --input: 40 10% 90%;
+    --ring: 38 35% 45%;
+    --radius: 0.375rem;
+    
+    /* Success */
+    --success: 142 70% 35%;
+    --success-foreground: 0 0% 100%;
+    
+    /* Premium overlays */
+    --overlay: 0 0% 0% / 0.4;
+    --glass: 0 0% 100% / 0.8;
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 20px -2px hsl(0 0% 0% / 0.08);
+    --shadow-medium: 0 8px 30px -4px hsl(0 0% 0% / 0.12);
+    --shadow-strong: 0 20px 50px -10px hsl(0 0% 0% / 0.2);
+    
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
+    --sidebar-foreground: 0 0% 25%;
+    --sidebar-primary: 0 0% 10%;
     --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 40 10% 95%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 40 10% 92%;
+    --sidebar-ring: 38 35% 45%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    /* Core backgrounds - Deep elegant dark */
+    --background: 0 0% 6%;
+    --foreground: 40 10% 95%;
+    
+    /* Card surfaces */
+    --card: 0 0% 9%;
+    --card-foreground: 40 10% 95%;
+    
+    /* Popover */
+    --popover: 0 0% 9%;
+    --popover-foreground: 40 10% 95%;
+    
+    /* Primary - Champagne Gold (brighter for dark mode) */
+    --primary: 38 45% 55%;
+    --primary-foreground: 0 0% 5%;
+    
+    /* Secondary */
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 40 10% 90%;
+    
+    /* Muted */
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 55%;
+    
+    /* Accent - Rose Gold */
+    --accent: 15 35% 55%;
+    --accent-foreground: 0 0% 5%;
+    
+    /* Destructive */
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* UI Elements */
+    --border: 0 0% 16%;
+    --input: 0 0% 16%;
+    --ring: 38 45% 55%;
+    
+    /* Success */
+    --success: 142 60% 45%;
+    --success-foreground: 0 0% 5%;
+    
+    /* Premium overlays */
+    --overlay: 0 0% 0% / 0.6;
+    --glass: 0 0% 10% / 0.85;
+    
+    /* Sidebar */
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 40 10% 90%;
+    --sidebar-primary: 38 45% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 0 0% 12%;
+    --sidebar-accent-foreground: 40 10% 90%;
+    --sidebar-border: 0 0% 14%;
+    --sidebar-ring: 38 45% 55%;
   }
 }
 
@@ -99,7 +131,187 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground;
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-medium tracking-tight;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/20 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/40;
+  }
+}
+
+@layer components {
+  /* Glass effect */
+  .glass {
+    @apply backdrop-blur-xl bg-glass border border-border/50;
+  }
+
+  /* Premium button styles */
+  .btn-premium {
+    @apply relative overflow-hidden transition-all duration-300;
+  }
+
+  .btn-premium::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full transition-transform duration-700;
+  }
+
+  .btn-premium:hover::before {
+    @apply translate-x-full;
+  }
+
+  /* Luxury card hover */
+  .card-luxury {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .card-luxury:hover {
+    @apply -translate-y-1 shadow-strong;
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient;
+  }
+
+  /* Section padding */
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Container */
+  .container-luxe {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Image zoom on hover */
+  .img-zoom {
+    @apply transition-transform duration-700 ease-out;
+  }
+
+  .img-zoom:hover {
+    @apply scale-105;
+  }
+
+  /* Underline animation */
+  .link-underline {
+    @apply relative inline-block;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-px bg-current scale-x-0 origin-right transition-transform duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+}
+
+@layer utilities {
+  /* Animation utilities */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+
+  .animate-gradient {
+    animation: gradient 3s linear infinite;
+  }
+
+  /* Stagger delays */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
 }
