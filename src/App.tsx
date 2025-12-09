@@ -13,6 +13,7 @@ import ProductDetail from "./pages/ProductDetail";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import Account from "./pages/Account";
+import Orders from "./pages/Orders";
 import Wishlist from "./pages/Wishlist";
 import Categories from "./pages/Categories";
 import Search from "./pages/Search";
@@ -36,7 +37,8 @@ const App = () => (
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/checkout" element={<Checkout />} />
                 <Route path="/account" element={<Account />} />
-                <Route path="/account/orders" element={<Account />} />
+                <Route path="/orders" element={<Orders />} />
+                <Route path="/account/orders" element={<Orders />} />
                 <Route path="/account/addresses" element={<Account />} />
                 <Route path="/account/notifications" element={<Account />} />
                 <Route path="/wishlist" element={<Wishlist />} />
